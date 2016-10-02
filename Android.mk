@@ -455,18 +455,6 @@ LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libqmi_csi.so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libloc_ds_api
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := huawei
-LOCAL_SRC_FILES := proprietary/vendor/lib64/libloc_ds_api.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_PROPRIETARY_MODULE := true
-LOCAL_MULTILIB := both
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libloc_ds_api.so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := libqmiservices
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei

@@ -71,7 +71,6 @@ PRODUCT_PACKAGES += \
     libqmi_common_so \
     libdsi_netctrl \
     libqmi_csi \
-    libloc_ds_api \
     libqmiservices
 
 # Extra modules from user configuration
