@@ -27,7 +27,6 @@ PRODUCT_PACKAGES += \
 # Prebuilt APKs/JARs from 'proprietary/app'
 PRODUCT_PACKAGES += \
     HwSarControlService \
-    Tycho \
     SetupSmartDeviceOverlay \
     HwMMITest
 
@@ -54,7 +53,6 @@ PRODUCT_PACKAGES += \
     ConnMO \
     qcrilmsgtunnel \
     CarrierEntitlement \
-    GCS \
     SprintDM \
     ConfigUpdater
 
@@ -72,7 +70,6 @@ PRODUCT_PACKAGES += \
     libqmi_cci \
     libqmi_common_so \
     libdsi_netctrl \
-    libloc_api_v02 \
     libqmi_csi \
     libloc_ds_api \
     libqmiservices

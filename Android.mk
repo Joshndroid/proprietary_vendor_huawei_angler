@@ -443,18 +443,6 @@ LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libdsi_netctrl.so
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libloc_api_v02
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := huawei
-LOCAL_SRC_FILES := proprietary/vendor/lib64/libloc_api_v02.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_PROPRIETARY_MODULE := true
-LOCAL_MULTILIB := both
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libloc_api_v02.so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := libqmi_csi
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
