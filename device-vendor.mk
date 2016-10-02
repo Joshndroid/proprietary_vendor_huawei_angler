@@ -27,6 +27,7 @@ PRODUCT_PACKAGES += \
 # Prebuilt APKs/JARs from 'proprietary/app'
 PRODUCT_PACKAGES += \
     HwSarControlService \
+    Tycho \
     SetupSmartDeviceOverlay \
     HwMMITest
 
@@ -53,6 +54,7 @@ PRODUCT_PACKAGES += \
     ConnMO \
     qcrilmsgtunnel \
     CarrierEntitlement \
+    GCS \
     SprintDM \
     ConfigUpdater
 
