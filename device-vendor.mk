@@ -21,9 +21,9 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt APKs/JARs from 'proprietary/app'
 PRODUCT_PACKAGES += \
+    HwMMITest \
     HwSarControlService \
-    SetupSmartDeviceOverlay \
-    HwMMITest
+    SetupSmartDeviceOverlay
 
 # Prebuilt APKs libs symlinks from 'proprietary/app'
 PRODUCT_PACKAGES += \
@@ -31,25 +31,25 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt APKs/JARs from 'proprietary/framework'
 PRODUCT_PACKAGES += \
-    qcrilhook \
+    com.google.android.camera.experimental2015 \
     com.google.widevine.software.drm \
-    com.google.android.camera.experimental2015
+    qcrilhook
 
 # Prebuilt APKs/JARs from 'proprietary/priv-app'
 PRODUCT_PACKAGES += \
+    CallStatistics \
+    CarrierEntitlement \
+    CNEService \
+    ConfigUpdater \
+    ConnMO \
+    DCMO \
+    DiagMon \
+    DMService \
+    Entitlement \
     HiddenMenu \
     HotwordEnrollment \
-    DMService \
-    DCMO \
-    Entitlement \
-    DiagMon \
-    CNEService \
-    CallStatistics \
-    ConnMO \
     qcrilmsgtunnel \
-    CarrierEntitlement \
-    SprintDM \
-    ConfigUpdater
+    SprintDM
 
 # Prebuilt APKs libs symlinks from 'proprietary/priv-app'
 PRODUCT_PACKAGES += \
@@ -60,14 +60,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lowi.conf
 
-# Prebuilt shared libraries from 'vendor'
+# Prebuilt shared libraries
 PRODUCT_PACKAGES += \
+    libdsi_netctrl \
     libqmi_cci \
     libqmi_common_so \
-    libdsi_netctrl \
     libqmi_csi \
     libqmiservices
 
 # Extra modules from user configuration
 PRODUCT_PACKAGES += \
     ETC_AOSPLinks
+

@@ -89,7 +89,6 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_DEX_PREOPT := false
 include $(BUILD_PREBUILT)
 
-
 include $(CLEAR_VARS)
 LOCAL_MODULE := libManufacture_64.so
 LOCAL_MODULE_CLASS := FAKE
@@ -379,6 +378,18 @@ $(LOCAL_BUILT_MODULE):
 	$(hide) touch $@
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libdsi_netctrl
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_OWNER := huawei
+LOCAL_SRC_FILES := proprietary/vendor/lib64/libdsi_netctrl.so
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_PROPRIETARY_MODULE := true
+LOCAL_MULTILIB := both
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libdsi_netctrl.so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libqmi_cci
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := huawei
@@ -402,17 +413,7 @@ LOCAL_MULTILIB := both
 LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libqmi_common_so.so
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := libdsi_netctrl
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_OWNER := huawei
-LOCAL_SRC_FILES := proprietary/vendor/lib64/libdsi_netctrl.so
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_PROPRIETARY_MODULE := true
-LOCAL_MULTILIB := both
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libdsi_netctrl.so
-include $(BUILD_PREBUILT)
+
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libqmi_csi
