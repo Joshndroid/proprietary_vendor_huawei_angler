@@ -14,11 +14,6 @@
 
 $(call inherit-product, vendor/huawei/angler/angler-vendor-blobs.mk)
 
-# Prebuilt APKs/JARs from 'vendor/app'
-PRODUCT_PACKAGES += \
-    ims \
-    TimeService
-
 # Prebuilt APKs libs symlinks from 'vendor/app'
 PRODUCT_PACKAGES += \
     libimscamera_jni_64.so \
